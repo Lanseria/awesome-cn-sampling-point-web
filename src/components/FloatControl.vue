@@ -12,7 +12,7 @@ import { filter, setFilter } from '~/composables/store'
     m="x3 b10"
   >
     <div
-      bg="white"
+      bg="white dark:black"
       rounded
       shadow
       flex="~ col"

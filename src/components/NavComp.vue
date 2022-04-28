@@ -21,7 +21,7 @@ import {
     relative
   >
     <div
-      text="sm gray-700"
+      text="sm gray-400 dark:white"
       flex="none"
       m="1"
       bg="hover:gray-100"
@@ -34,7 +34,7 @@ import {
       <Icon
         icon="carbon:chevron-down"
         inline-block
-        text="gray-500"
+        text="gray-400 dark:white"
         align-middle
       />
       <select
@@ -60,7 +60,7 @@ import {
       m="x1 auto"
       cursor="pointer"
       bg="hover:gray-100"
-      text="gray-500 hover:gray-700"
+      text="gray-400 dark:white hover:gray-700"
       rounded
       @click="() => setSearchOpen(true)"
     >
@@ -71,7 +71,7 @@ import {
       m="x1 auto"
       cursor="pointer"
       bg="hover:gray-100"
-      text="gray-500 hover:gray-700"
+      text="gray-400 dark:white hover:gray-700"
       @click="() => emitter.emit('track')"
     >
       <Icon icon="carbon:map" text="lg" />

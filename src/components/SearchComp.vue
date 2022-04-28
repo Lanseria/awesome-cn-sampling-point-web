@@ -6,6 +6,7 @@ import { searchResult, searchString, setSearchOpen } from '~/composables/store'
 <template>
   <div
     class="h-screen w-screen relative grid"
+    bg="white dark:black"
     :style="{
       gridTemplateRows: 'max-content auto',
     }"
@@ -15,6 +16,7 @@ import { searchResult, searchString, setSearchOpen } from '~/composables/store'
         ref="inputRef"
         :value="searchString"
         placeholder="搜索"
+        bg="white dark:black"
         class="px-3 py-4 outline-none w-full"
         @change="
           (e) => {

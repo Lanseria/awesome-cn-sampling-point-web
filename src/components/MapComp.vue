@@ -5,6 +5,7 @@ import mapboxgl from 'mapbox-gl'
 import MapboxLanguage from '@mapbox/mapbox-gl-language'
 import { setCurrent, setLoc } from '~/composables/store'
 import { emitter } from '~/event'
+import { isDark } from '~/composables'
 mapboxgl.accessToken
   = 'pk.eyJ1IjoibGFuc2VyaWEiLCJhIjoiY2wxMGo5ZWk3MTF3dTNkcnRwcDMyMXowOSJ9.kxLDvTThtaU0uiBOXanNvA'
 
@@ -86,8 +87,8 @@ const updateMap = () => {
       source: 'source',
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': '#d3cdc0',
-        'circle-stroke-color': '#a59a83',
+        'circle-color': isDark.value ? '#323232' : '#d3cdc0',
+        'circle-stroke-color': isDark.value ? '#222222' : '#a59a83',
         'circle-stroke-width': 1,
         'circle-radius': 10,
       },
@@ -122,8 +123,8 @@ const updateMap = () => {
         'icon-allow-overlap': true,
       },
       paint: {
-        'text-color': '#7e6c56',
-        'text-halo-color': '#fff',
+        'text-color': isDark.value ? '#bbb' : '#7e6c56',
+        'text-halo-color': isDark.value ? '#000' : '#fff',
         'text-halo-width': 1,
         'text-halo-blur': 0,
       },
@@ -148,10 +149,11 @@ watch(
     deep: true,
   },
 )
+
 onMounted(() => {
   map = new mapboxgl.Map({
     container: mapContainer.value,
-    style: 'mapbox://styles/lanseria/cl10jowpd006m15odyj4d5d9j',
+    style: isDark.value ? 'mapbox://styles/lanseria/cl2ipj7ar004z14nv9lgrdb2d' : 'mapbox://styles/lanseria/cl10jowpd006m15odyj4d5d9j',
     center: props.data.center,
     zoom: SCALE,
   })
