@@ -19,7 +19,7 @@ export const parseShop = (shop: CafeShop) => {
     coordinates,
     color: properties['marker-color'],
     name: properties['名称'],
-    suggestion: properties['建议'],
+    status: properties['状态'],
     weiBoUrl: properties['WeiBo 链接'],
     referrers: properties.referrers as unknown as string[],
     location1,

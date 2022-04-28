@@ -1,7 +1,7 @@
 {
   "name": "awesome-cn-sampling-point-web",
   "private": true,
-  "packageManager": "pnpm@6.32.3",
+  "packageManager": "pnpm@7.0.0-rc.9",
   "scripts": {
     "fetch": "git clone -b sampling-point https://github.com/Lanseria/awesome-cn-data cafe 2> /dev/null || git -C cafe pull",
     "data": "node ./scripts/process.mjs",

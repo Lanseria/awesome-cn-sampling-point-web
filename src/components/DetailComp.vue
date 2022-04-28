@@ -13,7 +13,7 @@ const props = defineProps({
 const {
   name,
   color,
-  suggestion,
+  status,
   weiBoUrl,
   location1,
   location2,
@@ -32,7 +32,7 @@ const {
       <span
         :style="{ color }"
         class="inline-block"
-      >{{ suggestion }}</span>
+      >{{ status }}</span>
       <template v-if="distance">
         <span class="inline-block align-middle mx-1">・</span>
         <span class="inline-block align-middle">{{ distance }}</span>

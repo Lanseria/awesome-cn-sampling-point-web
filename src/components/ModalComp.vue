@@ -16,12 +16,12 @@ defineProps({
     :class="value ? '' : 'pointer-events-none'"
   >
     <div
-      class="bg-white bg-opacity-85 bottom-0 left-0 right-0 top-0 absolute transition-opacity duration-500 ease-out"
+      class="bg-white dark:bg-black bg-opacity-85 bottom-0 left-0 right-0 top-0 absolute transition-opacity duration-500 ease-out"
       :class="value ? 'opacity-75' : 'opacity-0'"
       @click="() => setValue(false)"
     />
     <div
-      class="bg-white absolute transition-all duration-200 ease-out border-gray-200 bottom-0 left-0 right-0 border-t"
+      class="bg-white dark:bg-black absolute transition-all duration-200 ease-out border-gray-200 dark:border-gray-800 bottom-0 left-0 right-0 border-t"
       :style="value ? {} : { transform: 'translateY(100%)' }"
     >
       <slot />
