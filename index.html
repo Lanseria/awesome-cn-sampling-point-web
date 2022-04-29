@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <title>核酸采样点分享</title>
-  <meta name="description" content="Opinionated Vite Starter Template">
+  <meta name="description" content="核酸采样点分享">
+  <meta name="keywords" content="核酸,采样点,分享"/>
+  <meta property="og:url" content="https://cn-sampling-point.netlify.app/"       />
+  <meta property="og:title" content="核酸采样点分享"          />
+  <meta property="og:description" content="更流畅，数据来自官方每半小时数据" />
+  <meta property="og:image" content="/og.png"  />
+  <meta property="og:image:url" content="/og.png"  />
+  <meta property="twitter:image" content="/og.png"  />
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body class="font-sans dark:text-white dark:bg-hex-121212">
   <div id="app"></div>
   <script>
-    (function() {
+    (function () {
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
       const setting = localStorage.getItem('color-schema') || 'auto'
       if (setting === 'dark' || (prefersDark && setting !== 'light'))
