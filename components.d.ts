@@ -5,7 +5,6 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AboutComp: typeof import('./src/components/AboutComp.vue')['default']
-    Counter: typeof import('./src/components/Counter.vue')['default']
     DetailComp: typeof import('./src/components/DetailComp.vue')['default']
     FloatControl: typeof import('./src/components/FloatControl.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
