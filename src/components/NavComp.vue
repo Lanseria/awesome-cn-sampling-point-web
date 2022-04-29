@@ -15,7 +15,7 @@ import {
   <div
     text-center
     p="2"
-    border="b gray-200"
+    border="b gray-200 dark:gray-800"
     flex
     font-light
     relative
@@ -59,8 +59,8 @@ import {
       p="2"
       m="x1 auto"
       cursor="pointer"
-      bg="hover:gray-100"
-      text="gray-400 dark:white hover:gray-700"
+      bg="hover:gray-100 dark:hover:gray-700"
+      text="gray-400 dark:white hover:gray-700 dark:hover:gray-100"
       rounded
       @click="() => setSearchOpen(true)"
     >
@@ -70,8 +70,8 @@ import {
       p="2"
       m="x1 auto"
       cursor="pointer"
-      bg="hover:gray-100"
-      text="gray-400 dark:white hover:gray-700"
+      bg="hover:gray-100 dark:hover:gray-700"
+      text="gray-400 dark:white hover:gray-700 dark:hover:gray-100"
       @click="() => emitter.emit('track')"
     >
       <Icon icon="carbon:map" text="lg" />

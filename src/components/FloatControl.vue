@@ -28,7 +28,7 @@ import { filter, setFilter } from '~/composables/store'
         :style="{
           color,
         }"
-        title="是否优秀"
+        title="状态"
         @click="() => setFilter(color)"
       >
         <Icon pointer-events-none :icon="ColorToIcon[color]" />
