@@ -8,5 +8,7 @@ node_modules
 .idea/
 *.log
 
+cafe/
+
 src/build.ts
 src/data.json

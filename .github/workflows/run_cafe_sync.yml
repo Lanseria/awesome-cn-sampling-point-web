@@ -6,6 +6,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   sync:
@@ -18,8 +21,8 @@ jobs:
       - name: Get source sha
         run: curl https://api.github.com/repos/Lanseria/awesome-cn-data/branches/sampling-point --silent | grep "sha" | head -n1 > sha
 
-      - name: Update source sha
-        uses: EndBug/add-and-commit@v9
+      - name: Commit
+        uses: EndBug/add-and-commit@v4
         with:
           message: 'chore: 每日更新 github 分支为 sampling-point 的数据，存 sha [bot]'
         env:
