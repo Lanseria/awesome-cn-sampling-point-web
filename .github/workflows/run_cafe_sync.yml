@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get source sha
         run: curl https://api.github.com/repos/Lanseria/awesome-cn-data/branches/sampling-point --silent | grep "sha" | head -n1 > sha
@@ -22,6 +22,5 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: 'chore: 每日更新 github 分支为 sampling-point 的数据，存 sha [bot]'
-          add: '.'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
