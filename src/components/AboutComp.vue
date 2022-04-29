@@ -78,7 +78,7 @@ import { fromNow } from '~/utils/time'
       源代码在
       <a
         class="text-gray-700 hover:text-gray-900"
-        href="https://github.com/Lanseria/awesome-cn-rcpark-web"
+        href="https://github.com/Lanseria/awesome-cn-sampling-point-web"
         target="_blank"
         rel="noreferrer"
       >Github</a>
