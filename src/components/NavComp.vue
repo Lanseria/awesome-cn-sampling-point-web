@@ -24,7 +24,7 @@ import {
       text="sm gray-400 dark:white"
       flex="none"
       m="1"
-      bg="hover:gray-100"
+      bg="hover:gray-100 dark:hover:gray-800"
       rounded
       p="x2 y1"
       cursor="pointer"
